@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FindKenny" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL1-v9-0Rn">
+                                <rect key="frame" x="175.66666666666666" y="83" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JwR-69-UIF">
+                                <rect key="frame" x="169.66666666666666" y="120" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highscore:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9S8-O4-AGX">
+                                <rect key="frame" x="155.33333333333334" y="773" width="82.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVH-HP-DuT">
+                                <rect key="frame" x="0.0" y="157" width="393" height="600"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QL1-v9-0Rn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Keu-49-LBV"/>
+                            <constraint firstItem="uVH-HP-DuT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KrE-rH-7fu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9S8-O4-AGX" secondAttribute="bottom" constant="24" id="PP4-3J-wr1"/>
+                            <constraint firstItem="9S8-O4-AGX" firstAttribute="top" secondItem="uVH-HP-DuT" secondAttribute="bottom" constant="16" id="VUl-it-BRc"/>
+                            <constraint firstItem="uVH-HP-DuT" firstAttribute="top" secondItem="JwR-69-UIF" secondAttribute="bottom" constant="16" id="b7B-E9-TiC"/>
+                            <constraint firstItem="JwR-69-UIF" firstAttribute="top" secondItem="QL1-v9-0Rn" secondAttribute="bottom" constant="16" id="cL7-lV-6q9"/>
+                            <constraint firstItem="uVH-HP-DuT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dAo-4c-kye"/>
+                            <constraint firstItem="JwR-69-UIF" firstAttribute="centerX" secondItem="QL1-v9-0Rn" secondAttribute="centerX" id="gRz-rM-oym"/>
+                            <constraint firstItem="9S8-O4-AGX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mCA-D1-fXv"/>
+                            <constraint firstItem="QL1-v9-0Rn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="zcU-fF-zmq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="uVH-HP-DuT" id="3MP-a1-UO5"/>
+                        <outlet property="currentScoreLabel" destination="JwR-69-UIF" id="syq-Nl-dRX"/>
+                        <outlet property="highScoreLabel" destination="9S8-O4-AGX" id="RTb-rv-QMS"/>
+                        <outlet property="timerLabel" destination="QL1-v9-0Rn" id="cIo-Y4-DhE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
